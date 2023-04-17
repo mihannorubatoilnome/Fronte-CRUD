@@ -96,7 +96,7 @@ export class TabellaEmployeeComponent implements OnInit {
     this.loadData(URL, this.pageNumber);
   }
 
-  startPage(){
+  firstPage(){
     this.loadData(URL, 0);
   }
 
@@ -108,7 +108,7 @@ export class TabellaEmployeeComponent implements OnInit {
     this.loadData(URL, this.pageNumber + 1);
   }
 
-  endPage(){
+  lastPage(){
     this.loadData(this.data!._links.last.href.toString());
   }
 
