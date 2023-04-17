@@ -28,7 +28,7 @@
     </button>
     &nbsp;
     <button (click)="submit()">
-      <ng-container *ngIf="isNew; else modifyingButton">Aggiungi</ng-container>
-      <ng-template #modifyingButton>Modifica</ng-template>
+      <ng-container *ngIf="isNew; else modifyingButton">Conferma</ng-container>
+      <ng-template #modifyingButton>Conferma</ng-template>
     </button>
   </div>
